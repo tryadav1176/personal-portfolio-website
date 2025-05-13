@@ -1,12 +1,10 @@
-# AI/ML Engineer Portfolio Website
+# Personal Portfolio Website
 
-A modern, responsive portfolio website designed specifically for AI/ML Engineers and Data Scientists to showcase their skills, projects, and research.
+A modern, responsive portfolio website designed specifically for AI/ML Engineers and Data Scientists and Web Developers to showcase their skills, projects, and research.
 
 ## Features
 
-- **Interactive Particle Background**: Using Particles.js to create a dynamic, tech-themed background
 - **Animated Sections**: Scroll animations using AOS (Animate On Scroll)
-- **Typing Animation**: Dynamic text typing effect using Typed.js
 - **Skills Visualization**: Animated progress bars for showcasing skill proficiency
 - **Responsive Design**: Mobile-friendly layout that works on all devices
 - **Dark/Light Mode Toggle**: Allow visitors to switch between dark and light themes
@@ -18,7 +16,7 @@ A modern, responsive portfolio website designed specifically for AI/ML Engineers
 ### Prerequisites
 
 - A web browser
-- Basic knowledge of HTML, CSS, and JavaScript (for customization)
+- Basic knowledge of HTML, CSS, and JavaScript
 
 ### Installation
 
@@ -37,7 +35,6 @@ Edit the HTML file to include your own:
 - About me description
 - Skills and proficiency levels
 - Projects with descriptions and links
-- Publications and research
 - Contact information
 
 #### Colors and Theme
