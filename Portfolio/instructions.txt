@@ -1,0 +1,61 @@
+# AI/ML Portfolio Website - Customization Instructions
+
+## Quick Start
+1. Open index.html in a web browser to view the current portfolio
+2. Replace placeholder images in assets/images folder with your own
+3. Customize the content in index.html to match your skills, projects, and information
+
+## Personalization Checklist
+- [ ] Update name and title in hero section and footer
+- [ ] Replace profile image (assets/images/profile.jpg)
+- [ ] Update project details and images
+- [ ] Modify skills and expertise areas with your real percentages
+- [ ] Add your actual publications or research papers
+- [ ] Update contact information
+- [ ] Add your own social media links
+
+## Deployment Options
+- GitHub Pages: Free and easy hosting for static websites
+- Netlify: Simple drag-and-drop deployment
+- Vercel: Great for frontend projects
+- Custom domain: For a more professional online presence
+
+## Advanced Customization
+- Color scheme: Edit CSS variables in style.css to match your personal brand
+- Particle animation: Modify particles-config.json for different background effects
+- Add more sections: Follow the existing HTML structure pattern
+- Customize animations: Modify AOS attributes in the HTML or change settings in script.js
+
+## Content Tips
+- Use clear, concise language about your expertise
+- Include measurable achievements in your projects
+- Link to actual GitHub repositories, papers, or demos
+- Consider adding a blog section for technical articles
+- Include downloadable resume option
+
+## Technical Notes
+- The website uses Particles.js for the interactive background
+- AOS library enables the scroll animations
+- Font Awesome provides the icons
+- Typed.js creates the typing animation effect
+- The website is fully responsive for all device sizes
+- Dark/light mode toggle is available for user preference
+
+For any questions or issues, check the documentation of the libraries used or refer to standard HTML/CSS/JS resources. 
+
+Usefull prompts:
+    1. Debugging Erors:
+        "Analyse this error message and provide a solution: 
+        Typeerror: Cannot read properties of undefined (reading 'map) in react when mapping overstate.
+        Also explain why the error occoured and suggest best practices to avoid it."
+    
+    2. Generating React Components:
+        "Generate a clean and reusable React Component for a search bar with auto complete suggestions.
+        Use Tailwind css for styling and making it responsive."
+
+    3. Optimise Code Performance:
+        "Optimize the below Python function that finds prime numbers up to a given number.
+        The current implementation is slow for large inputs:
+        <<insert your code here>>"
+
+    4. 

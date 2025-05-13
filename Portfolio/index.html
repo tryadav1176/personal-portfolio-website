@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI/ML Engineer Portfolio</title>
+
+    <!-- Styling Css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Adding Particle.js for interactive background -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Adding AOS for scroll animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/3a88caa6a3.js" crossorigin="anonymous"></script>
+    <!-- TypedJS for typing animation -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="particles-js"></div>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <!-- <li><a href="#publications">Publications</a></li> -->
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="mobile-menu-btn" aria-expanded="false" aria-label="Toggle navigation menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <button class="theme-toggle" aria-label="Toggle theme">
+            <i class="fas fa-sun"></i>
+        </button>
+    </nav>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="main" data-aos="fade-up">
+                <h1>AI/ML Engineer & Data Scientist & Web Developer</h1>
+                <p>Transforming data into intelligent solutions through <span class="typed-text"></span></p>
+                <div class="tech-stack">
+                    <span>Python</span>
+                    <span>TensorFlow</span>
+                    <span>PyTorch</span>
+                    <span>Scikit-learn</span>
+                    <span>Deep Learning</span>
+                </div>
+                <div class="image">
+                    <img src="assets/images/profile.jpg" alt="Profile" class="profile-image">
+                </div>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn primary-btn">Get in Touch</a>
+                    <a href="#projects" class="btn secondary-btn">View Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="About" id="about" data-aos="fade-up">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>As an AI/ML Engineer and Data Scientist, I specialize in developing intelligent systems and deriving meaningful insights from complex datasets. With expertise in deep learning, natural language processing, and computer vision, I create solutions that drive innovation and business value.</p>
+                
+                <div class="expertise-grid">
+                    <div class="expertise-card">
+                        <h3>Machine Learning</h3>
+                        <ul>
+                            <li>Supervised Learning</li>
+                            <li>Unsupervised Learning</li>
+                            <li>Reinforcement Learning</li>
+                            <li>Neural Networks</li>
+                        </ul>
+                    </div>
+                    <div class="expertise-card">
+                        <h3>Data Science</h3>
+                        <ul>
+                            <li>Data Analysis</li>
+                            <li>Statistical Modeling</li>
+                            <li>Data Visualization</li>
+                            <li>Big Data Processing</li>
+                        </ul>
+                    </div>
+                    <div class="expertise-card">
+                        <h3>AI Applications</h3>
+                        <ul>
+                            <li>Computer Vision</li>
+                            <li>Natural Language Processing</li>
+                            <li>Predictive Analytics</li>
+                            <li>Time Series Analysis</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills" data-aos="fade-up">
+            <h2>Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Python</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="progress-bar" data-progress="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>R</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="progress-bar" data-progress="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>SQL</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="progress-bar" data-progress="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Java</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="progress-bar" data-progress="75"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3>ML/DL Frameworks</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>TensorFlow</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="progress-bar" data-progress="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>PyTorch</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="progress-bar" data-progress="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Scikit-learn</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="progress-bar" data-progress="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Keras</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="progress-bar" data-progress="90"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3>Data Engineering</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Apache Spark</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="progress-bar" data-progress="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Hadoop</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="progress-bar" data-progress="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Docker</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="progress-bar" data-progress="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>AWS/GCP</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="progress-bar" data-progress="80"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects" data-aos="fade-up">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/project1.jpg" alt="AI Project 1">
+                    </div>
+                    <h3>Computer Vision for Medical Diagnosis</h3>
+                    <p>Deep learning model for automated disease detection in medical imaging using CNN architecture.</p>
+                    <div class="tech-tags">
+                        <span>PyTorch</span>
+                        <span>CNN</span>
+                        <span>Medical AI</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn">View Paper</a>
+                        <a href="#" class="btn">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/project2.jpg" alt="AI Project 2">
+                    </div>
+                    <h3>NLP-Powered Market Analysis</h3>
+                    <p>Sentiment analysis and market trend prediction using transformer models and financial data.</p>
+                    <div class="tech-tags">
+                        <span>BERT</span>
+                        <span>NLP</span>
+                        <span>Financial ML</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn">Case Study</a>
+                        <a href="#" class="btn">Demo</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/project3.jpg" alt="AI Project 3">
+                    </div>
+                    <h3>Reinforcement Learning for Robotics</h3>
+                    <p>Training robotic systems to learn optimal control policies using deep reinforcement learning.</p>
+                    <div class="tech-tags">
+                        <span>RL</span>
+                        <span>TensorFlow</span>
+                        <span>Robotics</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn">Research</a>
+                        <a href="#" class="btn">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="section-cta">
+                <a href="https://github.com/tryadav1176" target="_blank" class="btn primary-btn">View All Projects <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </section>
+
+        <!-- <section id="publications" class="publications" data-aos="fade-up">
+            <h2>Research & Publications</h2>
+            <div class="publication-list">
+                <div class="publication-card">
+                    <h3>Advances in Transfer Learning for Medical Image Analysis</h3>
+                    <p class="publication-meta">Published in International Journal of AI and Medical Imaging (2023)</p>
+                    <p>Research on improving transfer learning techniques for limited medical imaging datasets, resulting in 23% improvement in diagnostic accuracy.</p>
+                    <a href="#" class="btn">Read Paper</a>
+                </div>
+                
+                <div class="publication-card">
+                    <h3>Explainable AI for Financial Risk Assessment</h3>
+                    <p class="publication-meta">IEEE Conference on Machine Learning and Applications (2022)</p>
+                    <p>Novel approach to making deep learning models interpretable for risk management in financial institutions.</p>
+                    <a href="#" class="btn">Read Paper</a>
+                </div>
+                
+                <div class="publication-card">
+                    <h3>Optimizing Neural Network Architectures for Edge Devices</h3>
+                    <p class="publication-meta">ACM Conference on Embedded Systems (2021)</p>
+                    <p>Techniques for model compression and optimization to deploy complex neural networks on resource-constrained devices.</p>
+                    <a href="#" class="btn">Read Paper</a>
+                </div>
+            </div>
+            <div class="section-cta">
+                <a href="https://scholar.google.com/youraccount" target="_blank" class="btn primary-btn">View All Publications <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </section> -->
+
+        <section id="contact" class="contact" data-aos="fade-up">
+            <h2>Let's Collaborate</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>Interested in working together or have questions about my research? Feel free to reach out!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:your.email@example.com">tryadav0812@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Pune, Maharashtra, India</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-globe"></i>
+                            <a href="https://yourwebsite.com" target="_blank">yourwebsite.com</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select name="inquiry-type" required>
+                            <option value="">Select Inquiry Type</option>
+                            <option value="collaboration">Research Collaboration</option>
+                            <option value="consulting">AI Consulting</option>
+                            <option value="speaking">Speaking Engagement</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank" aria-label="Google Scholar"><i class="fab fa-google"></i></a>
+                <a href="#" target="_blank" aria-label="Medium"><i class="fab fa-medium"></i></a>
+                <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2024 Your Name | AI/ML Engineer & Data Scientist</p>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
