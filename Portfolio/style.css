@@ -386,6 +386,19 @@ section {
   margin-bottom: 1rem;
 }
 
+/* Experience Section */
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: none;
+}
+
+.experience-card {
+  background: rgba(30, 30, 30, 0.6);
+  border-radius: 10px;
+}
+
 /* Contact Section */
 .contact-form {
   background: rgba(30, 30, 30, 0.6);
