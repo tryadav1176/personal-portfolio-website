@@ -706,6 +706,12 @@ body.light-mode .footer-content>p{
   color: black;
 }
 
+body.light-mode .tech-stack>span{
+  color: var(--primary);
+  background: #ffffff;
+  border-color: var(--secondary);
+  box-shadow: 20px rgba(0, 0, 0, 0.1);
+}
 /*
 body.light-mode footer {
   color: rgb(0, 0, 0);
