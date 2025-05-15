@@ -85,7 +85,7 @@ nav {
 
 nav ul {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-evenly;
   align-items: center;
   height: 100%;
   max-width: 1200px;
@@ -397,8 +397,18 @@ section {
 .experience-card {
   background: rgba(30, 30, 30, 0.6);
   border-radius: 10px;
+  padding: 20px;
 }
 
+.experience-card h3{
+  font-size: x-large;
+}
+
+.experience-cta {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
 /* Contact Section */
 .contact-form {
   background: rgba(30, 30, 30, 0.6);
