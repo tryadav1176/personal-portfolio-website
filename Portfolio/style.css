@@ -694,13 +694,23 @@ body.light-mode {
 
 body.light-mode .expertise-card,
 body.light-mode .project-card,
-body.light-mode .publication-card,
+body.light-mode .experience-card,
 body.light-mode .contact-form,
 body.light-mode .skills-category,
 body.light-mode .contact-info {
   background: rgba(255, 255, 255, 0.8);
   border-color: rgba(108, 99, 255, 0.3);
 }
+
+body.light-mode .footer-content>p{
+  color: black;
+}
+
+/*
+body.light-mode footer {
+  color: rgb(0, 0, 0);
+  background: var(--accent)
+} */
 
 body.light-mode .form-group input,
 body.light-mode .form-group textarea,
@@ -711,6 +721,7 @@ body.light-mode .form-group select {
 
 body.light-mode .skill-bar {
   background: rgba(200, 200, 200, 0.6);
+  
 }
 
 /* Form Error State */
