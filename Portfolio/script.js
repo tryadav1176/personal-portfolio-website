@@ -9,8 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialize particles.js
     particlesJS.load('particles-js', 'particles-config.json', function() {
-        console.log('particles.js config loaded');
+    console.log('particles.js config loaded');
     });
+
 
     // Typed.js implementation for hero section
     if (document.querySelector('.typed-text')) {
