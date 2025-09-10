@@ -31,7 +31,7 @@ body {
 }
 
 #particles-js {
-  position: fixed; /* change to absolute if want to*/
+  position: fixed; /* change to absolute if want to */
   width: 100%;
   height: 100vh;
   top: 0;
@@ -826,4 +826,44 @@ body.light-mode .skill-bar {
 
 .image img {
   animation: float 6s ease-in-out infinite;
+}
+
+.thought-list {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  overflow: hidden;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.thought-card {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 500px;
+  justify-content: center;
+  align-items: center;
+  animation:slide 15s linear infinite;
+  border-radius: 15px;
+  border: 2px solid rgb(111, 35, 241);
+  background-color: rgba(30, 30, 30, 0.6);
+  height: 15vh;
+}
+
+.thought-card p {
+  object-fit: cover;
+  font-family: monospace;
+  text-align: center;
+  text-wrap: wrap;
+  padding-inline: 20px;
+  margin: auto;
+}
+
+.thought-card p>span{
+  font-size: x-large;
+}
+@keyframes slide {
+    to {
+        translate: calc(-4 * 250px);
+    }
 }
