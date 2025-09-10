@@ -864,6 +864,6 @@ body.light-mode .skill-bar {
 }
 @keyframes slide {
     to {
-        translate: calc(-4 * 250px);
+        translate: calc(-3 * 250px);
     }
 }
