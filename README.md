@@ -69,7 +69,9 @@ portfolio/
 │       ├── profile.jpg    # Your profile photo
 │       ├── project1.jpg   # Project thumbnails
 │       ├── project2.jpg
-│       └── project3.jpg
+│       ├── project3.jpg
+|       ├── project4.jpg
+|       └── project5.jpg
 └── README.md              # This file
 ```
 
