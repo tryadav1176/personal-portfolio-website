@@ -828,6 +828,9 @@ body.light-mode .skill-bar {
   animation: float 6s ease-in-out infinite;
 }
 
+.thoughts{
+  height: 70vh;
+}
 .thought-list {
   display: flex;
   flex-direction: row;
