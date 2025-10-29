@@ -406,6 +406,7 @@ section {
 .experience-list {
   display: flex;
   flex-direction: column;
+  gap: 1.5rem;
   width: 100%;
   border: none;
 }
@@ -426,7 +427,39 @@ section {
 .experience-card {
   background: rgba(30, 30, 30, 0.6);
   border-radius: 10px;
-  padding: 20px;
+  padding: 2rem;
+  border: 1px solid rgba(108, 99, 255, 0.2);
+  transition: var(--transition);
+  width: 100%;
+}
+
+.experience-card:hover{
+    transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 242, 254, 0.1);
+  border-color: var(--accent);
+}
+
+.experience-card-meta{
+  color: var(--accent);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.experience-type{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  /* margin: 0 1.5rem 1.5rem; */
+  border: none;
+  width: auto;
+}
+
+.experience-type span{
+  background: rgba(46, 91, 255, 0.15);
+  color: var(--accent);
+  padding: 0.3rem 0.8rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
 }
 
 .experience-card p{
@@ -442,6 +475,7 @@ section {
   gap: 1rem;
   margin-top: 2rem;
 }
+
 /* Contact Section */
 .contact-form {
   background: rgba(30, 30, 30, 0.6);
@@ -564,13 +598,23 @@ footer p {
   }
   
   .tech-stack {
-    flex-direction: column;
-    align-items: center;
-  }
+    /* flex-direction: column;
+    align-items: center; */
+    display: flex;
+    flex-wrap: wrap;
+  } 
   
   .profile-image {
     width: 150px;
     height: 150px;
+  }
+
+  .about-content p{
+    font-size: 0.95rem;
+  }
+
+  .experience-card .internship-summary{
+    font-size: 0.95rem;
   }
 }
 
@@ -830,43 +874,47 @@ body.light-mode .skill-bar {
 
 .thoughts{
   height: 70vh;
+  transition-duration: 5s;
 }
+
 .thought-list {
   display: flex;
   flex-direction: row;
   width: 100%;
   overflow: hidden;
   gap: 30px;
-  margin-top: 50px;
+  margin-top: 4rem;
 }
 
 .thought-card {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: 500px;
-  justify-content: center;
+  grid-auto-columns: 400px;
+  grid-auto-rows: 200px;
+  justify-content: space-evenly;
   align-items: center;
-  animation:slide 15s linear infinite;
+  animation:slide 30s linear infinite;
   border-radius: 15px;
   border: 2px solid rgb(111, 35, 241);
   background-color: rgba(30, 30, 30, 0.6);
-  height: 15vh;
 }
 
 .thought-card p {
-  object-fit: cover;
+  /* object-fit: cover; */
   font-family: monospace;
   text-align: center;
   text-wrap: wrap;
   padding-inline: 20px;
-  margin: auto;
+  font-size: 1rem;
+  /* margin: auto; */
 }
 
-.thought-card p>span{
+.thought-card p > span{
   font-size: x-large;
 }
+
 @keyframes slide {
     to {
-        translate: calc(-3 * 250px);
+        translate: calc(-10 * 250px);
     }
 }
