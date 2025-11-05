@@ -152,8 +152,17 @@ nav a:hover::after {
 }
 
 @media (max-width: 768px) {
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+  }
+
   .mobile-menu-btn {
     display: block;
+    padding-right: 10px;
   }
 
   nav ul {
@@ -165,6 +174,7 @@ nav a:hover::after {
     background: var(--light-dark);
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
     padding: 2rem;
     transition: var(--transition);
   }
@@ -180,6 +190,7 @@ nav a:hover::after {
   nav li:first-child {
     margin-bottom: 2rem;
   }
+
 }
 
 /* Main Sections */
@@ -872,6 +883,7 @@ body.light-mode .skill-bar {
   animation: float 6s ease-in-out infinite;
 }
 
+/* Thoughts Section */
 .thoughts{
   height: 70vh;
   transition-duration: 5s;
@@ -882,8 +894,10 @@ body.light-mode .skill-bar {
   flex-direction: row;
   width: 100%;
   overflow: hidden;
-  gap: 30px;
+  gap: 1rem;
   margin-top: 4rem;
+  border-left: 2px solid rgb(111, 35, 241);
+  border-right: 2px solid rgb(111, 35, 241);
 }
 
 .thought-card {
@@ -891,7 +905,7 @@ body.light-mode .skill-bar {
   grid-auto-flow: column;
   grid-auto-columns: 400px;
   grid-auto-rows: 200px;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   animation:slide 30s linear infinite;
   border-radius: 15px;
@@ -900,21 +914,62 @@ body.light-mode .skill-bar {
 }
 
 .thought-card p {
-  /* object-fit: cover; */
   font-family: monospace;
   text-align: center;
   text-wrap: wrap;
   padding-inline: 20px;
   font-size: 1rem;
-  /* margin: auto; */
 }
 
 .thought-card p > span{
   font-size: x-large;
+  padding: 5px;
 }
 
 @keyframes slide {
     to {
         translate: calc(-10 * 250px);
     }
+}
+
+@media (max-width: 768px) {
+
+  .thoughts {
+    height: auto;
+    position: relative;
+  }
+
+  .thought-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    border: none;
+    overflow: visible;
+  }
+
+  .thought-card {
+    animation: none;
+    grid-auto-flow: row;
+    grid-auto-columns: unset;
+    grid-auto-rows: unset;
+    height: 180px;
+    width: 90%;
+    margin: 0 auto;
+    position: sticky;
+    align-items: center;
+    justify-content: center;
+    top: 10%;
+    z-index: 2;
+    background-color: rgba(30, 30, 30, 0.85);
+    box-shadow: 0 0 20px rgba(111, 35, 241, 0.4);
+  }
+
+  .thought-card p{
+    text-align: center;
+  }
+
+  .thought-card p > span{
+  font-size: x-large;
+  padding: 5px;
+  }
 }
