@@ -464,24 +464,24 @@
                         </div> -->
                     </div>
                 </div>
-                <form class="contact-form" method="post">
+                <form class="contact-form" id="contactForm" method="post">
                     <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <select name="inquiry-type" required>
-                            <option value="">Select Inquiry Type</option>
-                            <option value="collaboration">Research Collaboration</option>
-                            <option value="consulting">AI Consulting</option>
-                            <option value="speaking">Speaking Engagement</option>
-                            <option value="other">Other</option>
+                        <select id="inquiry-type" name="inquiry-type" required>
+                        <option value="">Select Inquiry Type</option>
+                        <option value="collaboration">Research Collaboration</option>
+                        <option value="consulting">AI Consulting</option>
+                        <option value="speaking">Speaking Engagement</option>
+                        <option value="other">Other</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Your Message" required></textarea>
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
                     </div>
                     <button type="submit" class="btn primary-btn">Send Message</button>
                 </form>
@@ -504,5 +504,44 @@
 
     <!-- Custom JavaScript -->
     <script src="script.js"></script>
+
+    <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.0/firebase-app.js";
+    import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.0.0/firebase-firestore.js";
+
+    const firebaseConfig = {
+        apiKey: "AIzaSyARRzIJtscjZt89AwRFpDBY9g53A_hXLOo",
+        authDomain: "portfolio-contact-45ba5.firebaseapp.com",
+        projectId: "portfolio-contact-45ba5",
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    const contactForm = document.getElementById("contactForm");
+    contactForm.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const inquiryType = document.getElementById("inquiry-type").value;
+        const message = document.getElementById("message").value.trim();
+
+        try {
+        await addDoc(collection(db, "contacts"), {
+            name,
+            email,
+            inquiryType,
+            message,
+            createdAt: new Date(),
+        });
+        alert("✅ Your message has been sent successfully!");
+        contactForm.reset();
+        } catch (error) {
+        console.error("Error adding document: ", error);
+        alert("⚠️ Something went wrong. Please try again later.");
+        }
+    });
+    </script>
+
 </body>
 </html>
