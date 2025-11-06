@@ -904,7 +904,7 @@ body.light-mode .skill-bar {
 .thought-card {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: 400px;
+  grid-auto-columns: 300px;
   grid-auto-rows: 200px;
   justify-content: center;
   align-items: center;
@@ -918,8 +918,9 @@ body.light-mode .skill-bar {
   font-family: monospace;
   text-align: center;
   text-wrap: wrap;
-  padding-inline: 20px;
+  /* padding-inline: 20px; */
   font-size: 1rem;
+  margin: 0;
 }
 
 .thought-card p > span{
@@ -953,7 +954,7 @@ body.light-mode .skill-bar {
     grid-auto-flow: row;
     grid-auto-columns: unset;
     grid-auto-rows: unset;
-    height: 180px;
+    height: auto;
     width: 90%;
     margin: 0 auto;
     position: sticky;
@@ -967,6 +968,8 @@ body.light-mode .skill-bar {
 
   .thought-card p{
     text-align: center;
+    align-items: center;
+    margin: 0;
   }
 
   .thought-card p > span{
