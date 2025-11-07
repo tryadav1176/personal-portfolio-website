@@ -9,6 +9,7 @@ A modern, responsive portfolio website designed specifically for AI/ML Engineers
 - **Responsive Design**: Mobile-friendly layout that works on all devices
 - **Dark/Light Mode Toggle**: Allow visitors to switch between dark and light themes
 - **Modern UI Components**: Cards, progress bars, and interactive elements
+- **Contact Form with Firebase Firestore** — Messages are securely stored in Firestore for easy management.
 - **SEO-friendly Structure**: Properly structured HTML for better search engine visibility
 
 ## Getting Started
@@ -17,6 +18,7 @@ A modern, responsive portfolio website designed specifically for AI/ML Engineers
 
 - A web browser
 - Basic knowledge of HTML, CSS, and JavaScript
+- Firebase Firestore
 
 ### Installation
 
@@ -59,7 +61,7 @@ Adjust the particle animation by modifying the `particles-config.json` file.
 ## File Structure
 
 ```
-portfolio/
+main/
 ├── index.html             # Main HTML file
 ├── style.css              # Stylesheet
 ├── script.js              # JavaScript functionality
@@ -88,6 +90,7 @@ To add new sections to your portfolio:
 - HTML5
 - CSS3
 - JavaScript
+- Firebase Firestore 
 - [Particles.js](https://vincentgarreau.com/particles.js/) - For interactive background
 - [AOS Library](https://michalsnik.github.io/aos/) - For scroll animations
 - [Typed.js](https://github.com/mattboldt/typed.js/) - For typing animation
