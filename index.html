@@ -126,7 +126,7 @@
                     </div>
                     <div class="skill-item">
                         <div class="skill-info">
-                            <span>Java</span>
+                            <span>Javascript</span>
                             <span>85%</span>
                         </div>
                         <div class="skill-bar">
@@ -198,7 +198,7 @@
                     <div class="skill-item">
                         <div class="skill-info">
                             <span>Frontend</span>
-                            <span>80%</span>
+                            <span>90%</span>
                         </div>
                         <div class="skill-bar">
                             <div class="progress-bar" data-progress="80"></div>
@@ -332,29 +332,50 @@
             <div class="experience-list">
 
                 <div class="experience-card">
-                    <h3>Bijlani Corp. Pvt. Ltd., Pune</h3>
-                    <p class="experience-card-meta">Full-Stack Associate Trainee (Generalist) (Feb 2025 - Present)</p>
-                    <div class="experience-type">
+                    <div class="exp-header" aria-activedescendant="true">
+                        <h3>Bijlani Corp. Pvt. Ltd., Pune</h3>
+                        <p class="experience-card-meta">
+                        Full-Stack Associate Trainee (Generalist) (Feb 2025 - Present)
+                        </p>
+                        <div class="experience-type">
                         <span>Internship</span>
+                        </div>
                     </div>
-                    <p class="internship-summary">
-                        "As part of my role at Bijlani Corp, I am working as a Full-Stack Associate Trainee, contributing to the end-to-end development of web applications. My responsibilities include designing responsive front-end interfaces using React and Tailwind CSS, building scalable APIs with Node.js and Express, and integrating backend services with databases like MongoDB. The internship emphasizes full-stack project lifecycle understanding, collaborative development practices, and deployment using cloud-based platforms such as AWS and Vercel."
-                    </p>
-                    <div class="experience-cta">
+
+                    <div class="exp-details">
+                        <p class="internship-summary">
+                        "As part of my role at Bijlani Corp, I am working as a Full-Stack Associate Trainee,
+                        contributing to the end-to-end development of web applications. My responsibilities include
+                        designing responsive front-end interfaces using React and Tailwind CSS, building scalable APIs
+                        with Node.js and Express, and integrating backend services with databases like MongoDB."
+                        </p>
+                        <div class="experience-cta">
                         <a href="https://www.avinforsaksh.in/" class="btn">Project</a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="experience-card">
-                    <h3>AICTE, Edunet Foundation, Pune</h3>
-                    <p class="experience-card-meta">Artificial Intelligence and Data Analytics (Jan - Feb 2025)</p>
-                    <div class="experience-type">
+                    <div class="exp-header">
+                        <h3>AICTE, Edunet Foundation, Pune</h3>
+                        <p class="experience-card-meta">
+                        Artificial Intelligence and Data Analytics (Jan - Feb 2025)
+                        </p>
+                        <div class="experience-type">
                         <span>Internship</span>
+                        </div>
                     </div>
-                    <p class="internship-summary">"As part of the internship, I worked on applying Artificial Intelligence and Data Analytics techniques to real-world sustainability challenges. The project involved building a 'Crop nad Fertilizer Recommendation System using MAchine Learning' promoting the use of green technologies, and understanding how AI can support environmentally responsible decision-making."</p>
-                    <div class="experience-cta">
-                        <a href="https://github.com/tryadav1176/Crop_Fertilizer_RS.git" class="btn">Github</a>
-                        <a href="https://www.irjet.net/archives/V8/i4/PIT/ICIETET-64.pdf" class="btn">Read Paper </a>
+                    <div class="exp-details">
+                        <p class="internship-summary">
+                        "As part of the internship, I worked on applying Artificial Intelligence and Data Analytics 
+                        techniques to real-world sustainability challenges. The project involved building a 'Crop and 
+                        Fertilizer Recommendation System using MAchine Learning' promoting the use of green technologies, 
+                        and understanding how AI can support environmentally responsible decision-making."
+                        </p>
+                        <div class="experience-cta">
+                            <a href="https://github.com/tryadav1176/Crop_Fertilizer_RS.git" class="btn">Github</a>
+                            <a href="https://www.irjet.net/archives/V8/i4/PIT/ICIETET-64.pdf" class="btn">Read Paper </a>
+                        </div>
                     </div>
                 </div>
 
@@ -493,5 +514,24 @@
     });
     </script>
 
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll(".experience-card");
+
+    cards.forEach((card) => {
+        const header = card.querySelector(".exp-header");
+
+            header.addEventListener("click", () => {
+                console.log("Clicked:", card.querySelector("h3").textContent);
+
+                cards.forEach((c) => {
+                    if (c !== card) c.classList.remove("active");
+                });
+
+                card.classList.toggle("active");
+            });
+        });
+    });
+    </script>
 </body>
 </html>
