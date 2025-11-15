@@ -386,6 +386,32 @@ section {
   width: auto;
 }
 
+@media (max-width: 600px) {
+  .project-grid {
+    display: flex !important;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 1.2rem;
+    padding: 1rem;
+
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Hide scrollbar */
+  .project-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .project-card {
+    min-width: 85%;
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+    height: 600px;
+  }
+}
+
+
 /* Experience Section */
 .experience-list {
   display: flex;
@@ -612,8 +638,7 @@ footer p {
 }
 
 @media (max-width: 768px) {
-  .expertise-grid,
-  .project-grid {
+  .expertise-grid {
     grid-template-columns: 1fr;
   }
 }
